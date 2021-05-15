@@ -1,0 +1,26 @@
+{
+  "name": "curioustraveler",
+  "version": "1.0.0",
+  "description": "Recreating my axure based website/prototype into a full scale node.js/express.js website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrettrose/CuriousTraveler.git"
+  },
+  "author": "Barrett Rose <barrettrose1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barrettrose/CuriousTraveler/issues"
+  },
+  "homepage": "https://github.com/barrettrose/CuriousTraveler#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
