@@ -5,10 +5,23 @@ const express = require("express")
 const app = express();
 const port = 8000;
 
-//Routing for URL
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+//Enables the serving of static files
+app.use(express.static(__dirname + '/public'));
+
+// index page
+app.get('/', function(req, res) {
+    res.render('pages/index');
 });
+
+// about page
+app.get('/about', function(req, res) {
+    res.render('pages/about');
+});
+
+
 
 //Set express "app" to start listening, also outputs where express is listening with host and port
 app.listen(port, () => {
