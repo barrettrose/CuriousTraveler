@@ -1,0 +1,125 @@
+/* Import rock salt font from google */
+@import url(https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap);
+
+/* Import montserrat font with 700 weight from google */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+/* Import sanchez font from google */
+@import url(https://fonts.googleapis.com/css2?family=Sanchez&display=swap);
+
+body { 
+    margin: 0px; 
+}
+
+.content {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.home-slideshow {
+    width: 600px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Headings and paragraphs */
+h1 {
+    font-family: 'Rock Salt';
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 28px;
+    color: #CD853F;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.p1 {
+    font-family: 'Sanchez';
+    font-size: 20px;
+}
+
+.p2 {
+    font-family: 'Sanchez';
+    font-size: 12px;
+}
+
+.p1-centered {
+    font-family: 'Sanchez';
+    font-size: 20px;
+    text-align: center;
+    line-height: 0.2;
+}
+
+.p2-centered {
+    font-family: 'Sanchez';
+    font-size: 12px;
+    text-align: center;
+}
+/* End headings and paragraphs */
+
+
+
+/* Header partial */
+.navbar {
+    width: 1140px;
+    margin: auto;
+}
+
+.navbar-top {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.home-shortcut {
+    color: inherit;
+}
+
+.headerBackground {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.largeLogo {
+    height: 75%;
+    position: absolute;
+    top: 12%;
+    left: 37%;
+    border: 4px solid;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #87CEEB;
+}
+
+.navbar-link {
+    float: left;
+}
+
+.navbar-link a {
+    display: block;
+    color: #CD853F;
+    text-align: center;
+    padding: 14px 33px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 28px;
+    
+}
+
+.navbar-link a:hover {
+    background-color: #4eadd2;
+}
+/* End header partial */
