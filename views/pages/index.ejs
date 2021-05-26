@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include('../partials/head'); %>
+	<%- include('../partials/head'); %>
 </head>
 <body>
 
 <header>
-  <%- include('../partials/header'); %>
+	<%- include('../partials/header'); %>
 </header>
 
 <main>
-  <div class="content">
+	<div class="content">
 
-    <h2>Welcome to Curious Traveler!</h2>
-    <p class="p1-centered">The home for learning introductory information about countries across the globe.</p>  
-    <p class="p1-centered">Click on a tab above to get started!</p>
+    	<h2>Welcome to Curious Traveler!</h2>
+    	<p class="p1-centered">The home for learning introductory information about countries across the globe.<br>
+    	Click on a tab above to get started!</p>
+    
+    	<div class="home-slideshow-container">
+    		<img src="/images/homeSlideshow/MachuPicchu.jpg" class="home-slideshow-img" alt="Machu Picchu overlook">
+			<img src="/images/homeSlideshow/ChineseTeaHouse.jpg" class="home-slideshow-img" alt="Chinese tea house">
+			<img src="/images/homeSlideshow/ColcaCanyon.jpg" class="home-slideshow-img" alt="Colca Canyon overlook">
+			<img src="/images/homeSlideshow/ChineseMeal.jpg" class="home-slideshow-img" alt="Chinese meal">
+			<img src="/images/homeSlideshow/CuscoOverlook.jpg" class="home-slideshow-img" alt="Cusco, Peru overlook">
+			<img src="/images/homeSlideshow/HotPot.jpg" class="home-slideshow-img" alt="Chinese hot pot meal with friends">
+			<img src="/images/homeSlideshow/PeruPotatoes.jpg" class="home-slideshow-img" alt="Variety of Peruvian potatoes">
+			<img src="/images/homeSlideshow/SummerPalace.jpg" class="home-slideshow-img" alt="Summer Palace in Beijing">
+			<img src="/images/homeSlideshow/YuGarden.jpg" class="home-slideshow-img" alt="Yu Garden in Shanghai">
+    	</div>
 
-    <img src="/images/homeSlideshow/MachuPichu.jpg" class="home-slideshow" alt="Machu Pichu overlook">
-  </div>
+    	<hr>
+		<p class="p1-home">With Curious Traveler, you can explore different cultures through my past 
+		experiences visiting cities and countries across the world.  On the Destination
+		Map page, you can view places I have visited as well as see places I would like to
+		go to in the future.  On the Location Finder page, you can find a new location that
+		may interest you based on your inputted preferences.  Lastly, you can find more
+		information about the website’s author on the About Me page.
+		</p>
+
+  	</div>
 </main>
 
 <footer>
-  <%- include('../partials/footer'); %>
+  	<%- include('../partials/footer'); %>
 </footer>
+
+<script type="text/javascript" src="/javascripts/auto-slideshow.js"></script>
 
 </body>
 </html>
