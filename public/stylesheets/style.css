@@ -13,27 +13,68 @@ body {
 
 .content {
     width: 1140px;
+    margin: 0px auto;
+}
+
+/* Current development */
+.location-column-left {
+    float: left;
+    width: 70%;
+    outline: 1px solid black;
+    padding: 0px;
+}
+
+.location-title {
+    outline: 1px solid black;
+    padding: 10px;
+}
+
+.location-column-right {
+    float: left;
+    width: 30%;
+    outline: 1px solid black;
+}
+
+.location-album {
+    float: left;
+    width: 20%;
+}
+
+.location-pic {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.location-text {
+    float: left;
+    width: 80%;
+}
+
+hr.half-width {
+    width: 50%;
     margin: 0 auto;
 }
 
-.home-slideshow-container {
-    width: 600px;
-    height: 370px;
-    margin: 10px auto;
-}
-
-.home-slideshow-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* End current development */
 
 
-/* Headings and paragraphs */
+/* Headings and paragraphs 
+Note: Be aware of browser applied user agent stylesheets
+*/
 h1 {
     font-family: 'Rock Salt';
     font-size: 36px;
+    text-align: center;
+}
+.h1-location {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-family: 'Rock Salt';
+    font-size: 42px;
+    text-align: center;
+    font-weight: normal;
 }
 
 h2 {
@@ -80,7 +121,20 @@ h2 {
 }
 /* End headings and paragraphs */
 
+/* Home page elements */
+.home-slideshow-container {
+    width: 600px;
+    height: 370px;
+    margin: 10px auto;
+}
 
+.home-slideshow-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* End home page elements */
 
 /* Header partial */
 .navbar {
