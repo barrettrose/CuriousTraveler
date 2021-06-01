@@ -21,6 +21,11 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
+// Peru page
+app.get('/peru', function(req,res) {
+    res.render('pages/peru');
+});
+
 
 
 //Set express "app" to start listening, also outputs where express is listening with host and port
