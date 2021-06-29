@@ -1,0 +1,61 @@
+/* Import montserrat font with 700 weight from google */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+.navbar {
+	width: 1140px;
+	margin: auto;
+}
+
+.navbar-top {
+	width: 100%;
+	height: 200px;
+	position: relative; /* To position the logo in the center on top of background */
+}
+
+.navbar-background {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.navbar-home {
+	color: inherit;
+}
+
+.navbar-logo {
+	border: 4px solid;
+	height: 75%;
+
+	/* To position the logo in the center on top of background */
+	position: absolute;
+	top: 0;
+	left: 445px;
+	top: 20px;
+}
+
+.navbar-buttons {
+	list-style-type: none;	/* Removes bullet points */
+	background-color: #87CEEB;
+	margin: 0;
+	padding: 0;
+
+	/* Flexbox */
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.navbar-link a{
+	display: block;
+	color: #CD853F;
+    text-align: center;
+	text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 28px;
+	padding: 8px 33px;
+}
+
+.navbar-link a:hover {
+    background-color: #4eadd2;
+}
