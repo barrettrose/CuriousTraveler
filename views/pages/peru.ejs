@@ -2,47 +2,36 @@
 <html lang="en">
 <head>
 	<%- include('../partials/head'); %>
+	<link rel="stylesheet" type="text/css" href="stylesheets/content_style.css">
 </head>
 <body>
 
-<header>
-	<%- include('../partials/header'); %>
-</header>
+	<header>
+		<%- include('../partials/header'); %>
+	</header>
 
-<main>
-	<div class="content">
-		<div class="location-column-left">
-
-			<div class="location-title">
-				<hr class="half-width">
+	<main>
+		<div class="container">
+			<div class='title'>
+				<hr>
 				<h1 class="h1-location">Peru</h1>
-				<hr class="half-width">
+				<hr>
 			</div>
-
-			<div class="location-cuisine">
-				<div class="location-album">
-					<img class="location-pic" src="/images/peru/cuisine/fish.jpg">
-				</div>
-				
-				<div class="location-text">
-					<h2>Cuisine</h2>
-					<p>A paragraph on Peruvian cuisine.</p>
-				</div>
-				
+			<div class='facts'>
+				<h2>Quick Facts</h2>
 			</div>
-
+			<div class='cuisine-pic'>Cuisine Slideshow</div>
+			<div class='cuisine-prompt'>Cuisine Prompt</div>
+			<div class='culture-pic'>Culture Slideshow</div>
+			<div class='culture-prompt'>Culture Prompt</div>
+			<div class='geography-pic'>Geography Slideshow</div>
+			<div class='geography-prompt'>Geography Prompt</div>
 		</div>
+	</main>
 
-		<div class="location-column-right">
-			<p>This is an element!</p>
-		</div>
-	</div>
-</main>
-
-<footer>
-	
-	<%- include('../partials/footer'); %>
-</footer>
+	<footer>
+		<%- include('../partials/footer'); %>
+	</footer>
 
 </body>
 </html>
