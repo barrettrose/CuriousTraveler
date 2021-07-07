@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap);
 
 /* Import montserrat font with 700 weight from google */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 
 /* Import sanchez font from google */
 @import url(https://fonts.googleapis.com/css2?family=Sanchez&display=swap);
@@ -15,49 +15,6 @@ body {
     width: 1140px;
     margin: 0px auto;
 }
-
-/* Current development */
-.location-column-left {
-    float: left;
-    width: 70%;
-    outline: 1px solid black;
-    padding: 0px;
-}
-
-.location-title {
-    outline: 1px solid black;
-    padding: 10px;
-}
-
-.location-column-right {
-    float: left;
-    width: 30%;
-    outline: 1px solid black;
-}
-
-.location-album {
-    float: left;
-    width: 20%;
-}
-
-.location-pic {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.location-text {
-    float: left;
-    width: 80%;
-}
-
-hr.half-width {
-    width: 50%;
-    margin: 0 auto;
-}
-
-/* End current development */
-
 
 /* Headings and paragraphs 
 Note: Be aware of browser applied user agent stylesheets
@@ -78,6 +35,12 @@ h1 {
 }
 
 h2 {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    text-align: center;
+}
+
+.h2-welcome {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 28px;
