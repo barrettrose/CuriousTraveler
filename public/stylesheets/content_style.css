@@ -4,15 +4,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr auto auto auto;
-    gap: 5px;
+    gap: 10px;
 }
 
-/* Uncomment to see grid division lines 
+/* Uncomment to see grid division lines */
 .container div {
     border: 2px solid red;
     border-radius: 5px;
 }
-*/
+
 
 .title {
     grid-column: 1 / 4;
@@ -38,6 +38,7 @@
 .cuisine-pic {
     grid-column: 1 / 2;
     grid-row: 2;
+    position: relative;     /* To position the next and prev buttons for slideshow */
 }
 
 .cuisine-prompt {
@@ -45,6 +46,61 @@
     grid-row: 2;
 }
 
+.cuisine-slide {
+    
+}
+
+.cuisine-slide img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+/* Next & previous buttons for slideshow */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 62%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 
 .culture-pic {
