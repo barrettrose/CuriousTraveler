@@ -1,6 +1,8 @@
 /*
 Note: Since this code is only used once on the home page, it would be ideal to embed the following JavaScript
 directly in the page, however, I am implementing it externally as a learning experience with Node.js/Express.js
+
+Source: w3schools.com
 */
 
 var myIndex = 0;
