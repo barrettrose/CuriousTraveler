@@ -50,6 +50,22 @@ h2 {
     margin: 5px;
 }
 
+.h2-facts {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.h2-heading {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 2px;
+}
+
 .p1 {
     font-family: 'Sanchez';
     font-size: 18px;
@@ -77,10 +93,21 @@ h2 {
     width: 700px;
 }
 
+/* Footer */
 .p2-centered {
     font-family: 'Sanchez';
     font-size: 12px;
     text-align: center;
+}
+
+.p2-caption {
+    font-family: 'Sanchez';
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    height: 92px;
+    display: table-cell;
+    vertical-align: middle;
 }
 /* End headings and paragraphs */
 
