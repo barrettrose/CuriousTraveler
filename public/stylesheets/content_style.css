@@ -4,15 +4,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr auto auto auto;
-    gap: 10px;
+    gap: 15px;
 }
 
-/* Uncomment to see grid division lines */
+/* Uncomment to see grid division lines 
 .container div {
-    border: 2px solid red;
+    border: 1px solid red;
     border-radius: 5px;
 }
-
+*/
 
 .title {
     grid-column: 1 / 4;
@@ -28,7 +28,7 @@
 
 .facts {
     grid-column: 4 / 5;
-    grid-row: 1 / 5;
+    grid-row: 1 / auto;
 
 	border: 1px solid black;
 }
@@ -39,15 +39,14 @@
     grid-column: 1 / 2;
     grid-row: 2;
     position: relative;     /* To position the next and prev buttons for slideshow */
+
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .cuisine-prompt {
     grid-column: 2 / 4;
     grid-row: 2;
-}
-
-.cuisine-slide {
-    
 }
 
 .cuisine-slide img {
@@ -60,7 +59,7 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 62%;
+    top: 62.5%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -103,9 +102,14 @@
 }
 
 
+
 .culture-pic {
     grid-column: 3 / 4;
     grid-row: 3;
+    position: relative;     /* To position the next and prev buttons for slideshow */
+
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .culture-prompt {
@@ -113,16 +117,32 @@
     grid-row: 3;
 }
 
+.culture-slide img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
 
 
 .geography-pic {
     grid-column: 1 / 2;
     grid-row: 4;
+    position: relative;     /* To position the next and prev buttons for slideshow */
+
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .geography-prompt {
     grid-column: 2 / 4;
     grid-row: 4;
+}
+
+.geography-slide img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 
