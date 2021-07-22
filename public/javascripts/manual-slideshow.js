@@ -1,31 +1,100 @@
-/*
-Note: Since this code is only used once on the home page, it would be ideal to embed the following JavaScript
-directly in the page, however, I am implementing it externally as a learning experience with Node.js/Express.js
-
-All javascript code as well as HTML/CSS used in the creation of the manual slideshow is credited to w3schools.com
-https://www.w3schools.com/howto/howto_js_slideshow.asp
+/* Rewriting the manual-slideshow script provided by W3schools.com to handle the three manual slideshows on the page with one script
 */
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//Slideshow id (y-value for plusSlides()): 0
+var cuisineIndex = 1;
+showSlides(cuisineIndex, 0);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+//Slideshow id (y-value for plusSlides()): 1
+var cultureIndex = 1;
+showSlides(cultureIndex, 1);
+
+//Slideshow id (y-value for plusSlides()): 2
+var geographyIndex = 1;
+showSlides(geographyIndex, 2);
+
+// Next/previous controls - x=amount of slides to progress through, y=desired slideshow(see indexing above)
+function plusSlides(x, y) {
+
+	switch(y){
+		case 0: 
+			showSlides(cuisineIndex += x, 0);
+			return;
+		case 1: 
+			showSlides(cultureIndex += x, 1);
+			return;
+		case 2:
+			showSlides(geographyIndex +=x, 2);
+			return;
+	}
+
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function showSlides(x, y) {
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("cuisine-slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
+	switch(y){
+		case 0: 
+			var i;
+			var slides = document.getElementsByClassName("cuisine-slide");
+		
+			//If next button is pressed at last index, loop back to start of slideshow
+			if (x > slides.length) 
+				{cuisineIndex = 1}
+		
+			//If back button is pressed at index 1, loop back to end of slideshow
+			if (x < 1) 
+				{cuisineIndex = slides.length}
+		
+			//Loop through each slide and set display to none
+			for (i = 0; i < slides.length; i++) 
+				slides[i].style.display = "none";
+			
+			//Set new slide to display as block
+			slides[cuisineIndex-1].style.display = "block";
+
+			return;
+
+		case 1: 
+			var i;
+			var slides = document.getElementsByClassName("culture-slide");
+		
+			//If next button is pressed at last index, loop back to start of slideshow
+			if (x > slides.length) 
+				{cultureIndex = 1}
+		
+			//If back button is pressed at index 1, loop back to end of slideshow
+			if (x < 1) 
+				{cultureIndex = slides.length}
+		
+			//Loop through each slide and set display to none
+			for (i = 0; i < slides.length; i++) 
+				slides[i].style.display = "none";
+			
+			//Set new slide to display as block
+			slides[cultureIndex-1].style.display = "block";
+
+			return;
+
+		case 2:
+			var i;
+			var slides = document.getElementsByClassName("geography-slide");
+		
+			//If next button is pressed at last index, loop back to start of slideshow
+			if (x > slides.length) 
+				{geographyIndex = 1}
+		
+			//If back button is pressed at index 1, loop back to end of slideshow
+			if (x < 1) 
+				{geographyIndex = slides.length}
+		
+			//Loop through each slide and set display to none
+			for (i = 0; i < slides.length; i++) 
+				slides[i].style.display = "none";
+			
+			//Set new slide to display as block
+			slides[geographyIndex-1].style.display = "block";
+
+			return;
+			
+	}
 }
