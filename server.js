@@ -31,6 +31,11 @@ app.get('/test', function(req,res) {
     res.render('pages/test');
 })
 
+// test page
+app.get('/china', function(req,res) {
+    res.render('pages/china');
+})
+
 
 
 //Set express "app" to start listening, also outputs where express is listening with host and port
