@@ -55,7 +55,9 @@ h2 {
     font-size: 20px;
     text-align: center;
     font-weight: 500;
-    margin: 2px;
+    margin: 0px;
+
+    border: 1px solid black;
 }
 
 .h2-heading {
@@ -121,6 +123,17 @@ See here: https://www.w3schools.com/cssref/css_units.asp
     font-size: 14px;
     text-indent: 25px;
     margin: 7px auto;
+}
+
+th {
+    font-family: 'Sanchez';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+td {
+    font-family: 'Sanchez';
+    font-size: 14px;
 }
 /* End headings and paragraphs */
 
